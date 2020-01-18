@@ -10,10 +10,10 @@ struct MyClass {
 
 #[pymethods]
 impl MyClass {
-//    #[new]
-//    fn new(obj: &PyRawObject, num: i32) {
-//        obj.init({ MyClass { num } });
-//    }
+    #[new]
+    fn new(obj: &PyRawObject, num: i32) {
+        obj.init({ MyClass { num } });
+    }
 }
 
 #[pymodule]
