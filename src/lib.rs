@@ -11,8 +11,8 @@ struct MyClass {
 #[pymethods]
 impl MyClass {
     #[new]
-    fn new(obj: &PyRawObject, num: i32) {
-        obj.init({ MyClass { num } });
+    fn new(num: i32) -> Self {
+        MyClass { num }
     }
 }
 
