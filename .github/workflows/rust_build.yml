@@ -57,10 +57,10 @@ jobs:
 #      with:
 #        command: check
 
-    - name: Run clippy
-      run: |
-        rustup component add clippy
-        cargo clippy
+#    - name: Run clippy
+#      run: |
+#        rustup component add clippy
+#        cargo clippy
 
     - name: Test
       run: cargo test --no-default-features
